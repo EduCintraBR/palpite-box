@@ -1,0 +1,35 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+.bg-blue {
+    background-color: #1AC8FF;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.bg-footer {
+    background-color: #717171;
+}
+
+.btn-opacity:hover {
+    opacity: 0.9;
+}
+
+.group-contact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.group-contact ul li {
+    padding: 4px 24px;
+}
+
+.group-contact ul li a svg:hover {
+    opacity: 0.8;
+    color: white;
+}

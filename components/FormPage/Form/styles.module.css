@@ -1,0 +1,54 @@
+.label {
+    @apply text-lg;
+    @apply font-bold;
+    @apply block;
+    margin-top: 14px;
+}
+
+.formGroup, .radioGroup {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.radioGroup > .label {
+    margin-bottom: 8px;
+}
+
+.inputGroup input {
+    width: 50px;
+    height: 24px;
+    font-size: 12px;
+}
+
+.formGroup input {
+    width: 433px;
+    height: 50px;
+    line-height: 56px;
+    padding: 6px;
+    border: 1px solid #e5e5e5;
+    background-color: #EFFBFF;
+    border-radius: 10px;
+    margin-top: 4px;
+    @apply shadow-md;
+}
+
+.formGroup textarea {
+    width: 533px;
+    height: 200px;
+    line-height: 23px;
+    padding: 6px;
+    border: 1px solid #e5e5e5;
+    background-color: #EFFBFF;
+    border-radius: 10px;
+    margin-top: 4px;
+    @apply shadow-md;
+}
