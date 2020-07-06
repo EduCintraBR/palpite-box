@@ -4,9 +4,8 @@
 
 @tailwind utilities;
 
-
-.bg-blue {
-    background-color: #1AC8FF;
+.bg-btn {
+    background-color: #78b75b;
     font-size: 24px;
     line-height: 28px;
 }
@@ -16,7 +15,8 @@
 }
 
 .btn-opacity:hover {
-    opacity: 0.9;
+    color: white;
+    @apply shadow;
 }
 
 .group-contact ul {
