@@ -13,7 +13,7 @@ const geraCupom = () => {
 }
 
 export default async (request, response) => {
-    let CupomGerado = ''
+    let Cupom = ''
     let Promo = ''
 
     try {
@@ -27,11 +27,9 @@ export default async (request, response) => {
         const textoPromo = sheetConfig.getCell(2,1)
         
         if (promocaoAtiva.value == true) {
-            CupomGerado = geraCupom()
+            Cupom = geraCupom()
             Promo = textoPromo.value
         }
-
-        response.re
 
         const sheet = doc.sheetsByIndex[1]
     
@@ -40,15 +38,20 @@ export default async (request, response) => {
             Nome: data.Nome,
             Email: data.Email,
             Whatsapp: data.Whatsapp,
-            Cupom: CupomGerado,
+            Cupom: Cupom,
             Promocao: Promo,
             'Data Preenchimento': moment().format('DD/MM/YYYY HH:mm:S'),
             'Nota': data.Nota,
             Indica: data.Indica === 'true' ? 'Sim' : 'Não',
             Critica: data.Critica
-        })   
+        })
+        response.send(JSON.stringify({
+            showCoupon: Cupom !== '',
+            Cupom,
+            Promo
+        }))   
     } catch (error) {
+        response.send({ message: 'Erro => ' + error.message})
         console.log(error)
     }
-
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css'
 
-const Form = () => {
+const Form = ({ setSuccess, setRetorno }) => {
     const [nome, setNome] = useState('')
     const [email, setEmail] = useState('')
     const [whats, setWhats] = useState('')
@@ -22,11 +22,13 @@ const Form = () => {
         }
 
         try {
-            await fetch('/api/save', { 
+            const response = await fetch('/api/save', { 
                 method: 'POST',
                 body: JSON.stringify(formData)
             })
-            
+            const data = await response.json()
+            setSuccess(true)
+            setRetorno(data) 
         } catch (error) {
             return console.log(error) 
         }

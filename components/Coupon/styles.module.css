@@ -1,0 +1,19 @@
+.cupom {
+    margin: auto;
+    width: 400px;
+    height: 120px;
+    background: #e5c6a8;
+    border-radius: 0 50px;
+    display: flex;
+    font-size: 36px;
+    font-weight: bold;
+    justify-content: center;
+    border: 2px dotted black;
+    box-shadow: 3px 3px black;
+  }
+  
+  .num {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
