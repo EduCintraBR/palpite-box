@@ -9,7 +9,7 @@ const HomeContent = () => {
     return (
         <div className="flex flex-col">
             <p className="font-bold mt-24 text-center text-sm">
-                O restaurante X sempre busca por atender melhor seus clientes. <br/>
+                O restaurante PanelaQuente sempre busca por atender melhor seus clientes. <br/>
                 Por isso, estamos sempre abertos a ouvir a sua opinião.
             </p>
 
