@@ -4,8 +4,8 @@ import moment from 'moment'
 moment().locale('pt-br')
 
 const fromBase64 = value => {
-    const buffer = Buffer.from(value, 'base64')
-    return buffer.toString('ascii')
+    const buff = Buffer.from(value, 'base64')
+    return buff.toString('ascii')
 }
 
 const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
