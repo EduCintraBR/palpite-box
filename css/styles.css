@@ -33,3 +33,38 @@
     opacity: 0.8;
     color: white;
 }
+
+.infoSobre {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.infoSobre > p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.gridSobre {
+    display: grid;
+    height: 500px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.imgSobre {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 1 / 2;
+}
+
+.imgSobre > img {
+    width: 600px;
+    height: 400px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}

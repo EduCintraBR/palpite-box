@@ -9,13 +9,13 @@ const FormPage = () => {
         <React.Fragment>
             {!success &&
                 <> 
-                    <h1 className="text-xl text-center font-bold mt-6">
+                    <h1 className="text-2xl text-center font-bold mt-6">
                         Críticas e sugestões
                     </h1>
 
                     <p className="font-bold my-8 text-center text-sm mb-4">
-                        O restaurante X sempre busca por atender melhor seus clientes. <br/>
-                        Por isso, estamos sempre abertos a ouvir a sua opinião.
+                        O restaurante PanelaQuente sempre busca atender e entender melhor seus clientes. <br/>
+                        Por isso, estamos desejamos a ouvir a sua opinião.
                     </p>
                 </>
             }
@@ -24,7 +24,7 @@ const FormPage = () => {
 
             { success && 
                 <div className="mx-auto">
-                    <p className="w-1/5 mx-auto bg-blue-100 border-t border-b border-green-500 text-green-700 px-4 py-4 mt-4 mb-8 text-center">
+                    <p className="w-2/5 mx-auto bg-blue-100 border-t border-b border-green-500 text-green-700 px-4 py-4 mt-4 mb-8 text-center">
                         Obrigado por contribuir com sua sugestão e crítica!
                     </p>
 
@@ -35,6 +35,19 @@ const FormPage = () => {
                             <span className="text-2xl text-center block">
                                 <Cupom idCoupon={retorno.Cupom} />
                             </span>
+                        </div>
+                    }
+
+                    { 
+                        retorno.showCoupon && 
+                        <div className="mb-8">
+                            <strong className="text-center block text-lg my-4">
+                                {retorno.Promo}
+                                <p className="text-center text-sm my-4 italic">
+                                    Imprima, tire um print ou uma foto desta tela, <br/> 
+                                    e apresente na entrada do nosso restaurante.
+                                </p>
+                            </strong>
                         </div>
                     }
 

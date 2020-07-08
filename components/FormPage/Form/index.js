@@ -62,6 +62,7 @@ const Form = ({ setSuccess, setRetorno }) => {
             <div className={styles.radioGroup}>
                 <label className={styles.label}>Que nota você daria para o estabelecimento: </label>
                 <div className={styles.inputGroup}>
+                    
                     <input  type="radio" name="nota" 
                             value="1" onChange={e => setNota(e.target.value)}/> 1
                     <input  type="radio" name="nota" 
