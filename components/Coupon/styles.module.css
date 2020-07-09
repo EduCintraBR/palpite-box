@@ -17,3 +17,10 @@
     justify-items: center;
     align-items: center;
   }
+
+  @media (max-width: 500px) {
+    .cupom {
+      width: 333px;
+      font-size: 28px;
+    }
+  }

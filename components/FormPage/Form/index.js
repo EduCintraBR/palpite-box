@@ -39,18 +39,21 @@ const Form = ({ setSuccess, setRetorno }) => {
             <div className={styles.formGroup}>
                 <label className={styles.label}>Seu nome: </label>
                 <input  type="text" 
-                        name="nome" 
+                        name="nome"
+                        required 
                         onChange={e => setNome(e.target.value)} />
             </div>
             <div className={styles.formGroup}>
                 <label className={styles.label}>E-mail: </label>
-                <input  type="email" 
+                <input  type="email"
+                        required 
                         name="email"
                         onChange={e => setEmail(e.target.value)} />
             </div>
             <div className={styles.formGroup}>
                 <label className={styles.label}>Whatsapp: </label>
-                <input  type="text" 
+                <input  type="text"
+                        required 
                         name="whatsapp"
                         onChange={e => setWhats(e.target.value)} />
             </div>

@@ -24,15 +24,15 @@ const FormPage = () => {
 
             { success && 
                 <div className="mx-auto">
-                    <p className="w-2/5 mx-auto bg-blue-100 border-t border-b border-green-500 text-green-700 px-4 py-4 mt-4 mb-8 text-center">
+                    <p className="w-4/5 lg:w-2/5 mx-auto bg-blue-100 border-t border-b border-green-500 text-green-700 px-4 py-4 mt-4 mb-8 text-center">
                         Obrigado por contribuir com sua sugestão e crítica!
                     </p>
 
                     { 
                         retorno.showCoupon && 
                         <div className="mb-8">
-                            <strong className="text-center block text-2xl my-4">Parabéns, aqui está seu CUPOM</strong>
-                            <span className="text-2xl text-center block">
+                            <strong className="text-center block text-xl lg:text-2xl my-4">Parabéns, aqui está seu CUPOM</strong>
+                            <span className="text-xl lg:text-2xl text-center block">
                                 <Cupom idCoupon={retorno.Cupom} />
                             </span>
                         </div>
