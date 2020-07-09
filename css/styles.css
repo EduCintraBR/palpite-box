@@ -63,8 +63,27 @@
     grid-row: 1 / 2;
 }
 
+@media (max-width:500px) {
+    .gridSobre {
+        display: grid;
+        flex-wrap: wrap;
+        height: 700px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+    .infoSobre {
+        margin: 15px;
+    }
+    
+    .imgSobre {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 15px;
+    }
+}
+
 .imgSobre > img {
     width: 600px;
     height: 400px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
 }

@@ -52,3 +52,15 @@
     margin-top: 4px;
     @apply shadow-md;
 }
+
+@media (max-width: 500px) {
+    .formGroup textarea {
+        width: 343px;
+    }
+    .formGroup input {
+        width: 343px;
+    }
+    .label {
+        font-size: 16px;
+    } 
+}

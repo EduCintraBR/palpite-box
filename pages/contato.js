@@ -4,8 +4,8 @@ import { FaLinkedin, FaGithub, FaLaptop } from 'react-icons/fa'
 
 const Contato = () => {
     return (
-        <div className="py-16">
-            <h1 className="text-center text-4xl text-green-800">Olá, eu sou o Eduardo Cintra</h1>
+        <div className="py-16 mx-4">
+            <h1 className="text-center text-3xl lg:text-4xl text-green-800">Olá, eu sou o Eduardo Cintra</h1>
             <p className="text-md text-center">Gostaria de me conhecer mais? Entre em contato comigo!</p>
             <div className="group-contact pt-8">
                 <ul>

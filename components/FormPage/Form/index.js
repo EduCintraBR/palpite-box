@@ -86,7 +86,8 @@ const Form = ({ setSuccess, setRetorno }) => {
             </div>
 
             <button className="
-                px-20 
+                px-8
+                lg:px-20 
                 py-4 
                 my-10 
                 font-bold 

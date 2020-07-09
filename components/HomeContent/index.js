@@ -8,13 +8,14 @@ const HomeContent = () => {
     const { data, error } = useSWR('/api/get_promo', fetcher)
     return (
         <div className="flex flex-col">
-            <p className="font-bold mt-24 text-center text-sm">
+            <p className="font-bold mt-8 text-center text-sm">
                 O restaurante PanelaQuente sempre busca por atender melhor seus clientes. <br/>
                 Por isso, estamos sempre abertos a ouvir a sua opinião.
             </p>
 
             <button className="
-                px-20 
+                px-8
+                lg:px-20  
                 py-4 
                 mt-10 
                 font-bold 
